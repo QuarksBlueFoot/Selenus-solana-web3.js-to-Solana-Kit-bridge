@@ -1,0 +1,38 @@
+{
+  "name": "Selenus-solana-web3.js-to-Solana-Kit-bridge",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Incrementally adopt @solana/kit without replacing wallet-adapter-react.",
+  "license": "Apache-2.0",
+  "author": "Selenus",
+  "homepage": "https://github.com/QuarksBlueFoot/Selenus-solana-web3.js-to-Solana-Kit-bridge#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QuarksBlueFoot/Selenus-solana-web3.js-to-Solana-Kit-bridge.git"
+  },
+  "bugs": {
+    "url": "https://github.com/QuarksBlueFoot/Selenus-solana-web3.js-to-Solana-Kit-bridge/issues"
+  },
+  "scripts": {
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "typecheck": "turbo run typecheck",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,js,json,md}\"",
+    "format:check": "prettier --check \"**/*.{ts,tsx,js,json,md}\"",
+    "clean": "turbo run clean",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "turbo run build && changeset publish"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.27.0",
+    "prettier": "^3.3.0",
+    "turbo": "^2.4.0",
+    "typescript": "^5.9.3"
+  },
+  "packageManager": "pnpm@9.15.0",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
